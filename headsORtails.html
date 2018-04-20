@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+<button>Heads or Tails</button>
+<span id="headsTailsImg"/>
+
+<script>
+  $("button").click(()=>{
+const headsOrTails = parseInt(Math.random()*2);
+if(headsOrTails == 0){
+$("span#headsTailsImg").html( "<img src = 'https://images-na.ssl-images-amazon.com/images/I/51xs7F%2BtP5L._SX355_.jpg'>")
+} else {
+  $("span#headsTailsImg").html( "<img src = 'https://images-na.ssl-images-amazon.com/images/I/51NyMaKLydL.jpg'>")
+}
+  });
+
+
+</script>
+</body>
+</html>
